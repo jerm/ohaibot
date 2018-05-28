@@ -1,24 +1,24 @@
 # Description
 
-                Welcome to the Offite Halla Audiovisual Interface Robot, or OhaiBot
+Welcome to the Offite Halla Audiovisual Interface Robot, or OhaiBot
 
-                This is the sofware repo for my [absurd contraption](https://www.youtube.com/watch?v=c0bsKc4tiuY)
+This is the sofware repo for my [absurd contraption](https://www.youtube.com/watch?v=c0bsKc4tiuY)
 
 # Installation
 
-            clone the repo
+    clone the repo
 
-            $ cd ohaibot
+    $ cd ohaibot
 
-            $ sudo pip install --user -r requirements.txt
+    $ sudo pip install --user -r requirements.txt
 
-            # edit ohaibot.ini
+    # edit ohaibot.ini
 
-            # edit zappa_setting.json
+    # edit zappa_setting.json
 
-            $ zappa deploy 
+    $ zappa deploy 
 
-            # set up slack slash command
+    # set up slack slash command
 
 
 # Edit ohaibot.ini
