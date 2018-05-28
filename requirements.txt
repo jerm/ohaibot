@@ -1,0 +1,6 @@
+requests
+datadog
+flask
+zappa
+boto
+click

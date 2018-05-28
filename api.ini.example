@@ -1,0 +1,24 @@
+[api]
+
+# What user(s) on which slack(s) can call me?
+valid_users: jermops, whos_jonny
+valid_teams: my_slack_team_name, other_slack_name
+
+# two different tokens for two different slack commands 
+slack_token_ohai: 5mmmmmmmmmmmm55555
+slack_token_bye: mmm555555mmmmmmm55
+
+# Api needs to talk to SQS. Roles would be better
+aws_region: us-east-2
+aws_key: AKIA84JFNYJFN48Q
+aws_secret: 983iu4ygfb98o7igufhho8we7iuhf
+
+# For talking to/from the ohaibot
+tobot_queue_name: ohai-callout
+frombot_queue_name: ohai-callback
+
+# Conference urls gets returned on successful ohai
+conference_url: https://appear.in/my_fancy_meeting_room
+
+
+

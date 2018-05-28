@@ -1,0 +1,18 @@
+{
+    "prod": {
+        "app_function": "api.app", 
+        "aws_region": "us-east-2", 
+        "profile_name": "jerm", 
+        "project_name": "ohaibot", 
+        "runtime": "python2.7", 
+        "s3_bucket": "zappa-ohaijermops"
+    },
+    "staging": {
+        "app_function": "api.app", 
+        "aws_region": "us-east-2", 
+        "profile_name": "jerm", 
+        "project_name": "ohaibot", 
+        "runtime": "python2.7", 
+        "s3_bucket": "zappa-ohaijermops"
+    }
+}
