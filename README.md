@@ -1,8 +1,8 @@
 # Description
 
-Welcome to the Offite Halla Audiovisual Interface Robot, or OhaiBot
+    Welcome to the Off-site Halla Audiovisual Interface Robot, or OhaiBot
 
-This is the sofware repo for my [absurd contraption](https://www.youtube.com/watch?v=c0bsKc4tiuY)
+    This is the sofware repo for my [absurd contraption](https://www.youtube.com/watch?v=c0bsKc4tiuY)
 
 # Installation
 
