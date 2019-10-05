@@ -47,7 +47,6 @@ def ohaibot(request):
     user = request.form['user_name']
     command = request.form['command'].replace('/','')
     log.debug(request.form)
-    log.debug("foo")
     if str(token) != str(conf.token[command]):
         log.debug(token)
         return "Nope nope nope", 403
@@ -60,17 +59,20 @@ def ohaibot(request):
     msg = Message()
     msg.set_body('{}:{}'.format(command, user))
     tobotq.write(msg)
-    msg = frombotq.read(wait_time_seconds=5)
-    if msg._body == "such face":
-        return "Ohai!! Meet here! {}".format(conf.video_url)
-    elif msg._body == 'much lonely':
-        return "Very sadness, {} not at their desk found!".format(command)
-    elif msg._body == 'newfacewhodis':
-        return "Imposter alert!".format(command)
-    elif msg._body == 'kthxbai':
-        return "buh bye!"
+    msg = frombotq.read(wait_time_seconds=2)
+    if msg:
+        if msg._body == "such face":
+            return "Ohai!! Meet here! {}".format(conf.video_url)
+        elif msg._body == 'much lonely':
+            return "Very sadness, {} not at their desk found!".format(command)
+        elif msg._body == 'newfacewhodis':
+            return "Imposter alert!".format(command)
+        elif msg._body == 'kthxbai':
+            return "buh bye!"
+        else:
+            return "OhaiBot Says: {}".format(msg._body)
     else:
-        return "So confusion. Much broken."
+        return "So silence. Very luck."
 
 
 @app.route("/ohai", methods=['POST'])
